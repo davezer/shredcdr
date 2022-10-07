@@ -1,11 +1,67 @@
-.App {
+:root {
+  --font-family: 'Ubuntu', sans-serif;
+  --charcoal: #101519;
+  --white:  #fff;
+  --chestnut: #98473E;
+  --cadetGrey: #9EA3B0;
+  --pacificBlue: #006D77;
+  --copper: #BE7220;
+
+  --timing: 200ms;
+  --scale: 1;
+}
+
+body {
+  background-color: var(--charcoal);
+  color: var(--white);
+  font-family: var(--font-family);
+  margin: 0;
+  line-height: 1.1;
+  box-sizing: border-box;
+  min-width: fit-content;
+}
+
+/* NAVBAR */
+.brand {
+  color: var(--pacificBlue);
+  font-size: 30px;
+  padding-top: 1px;
+
+}
+
+.nav-link {
+  color: white;
+  font-size: 18px;
+  padding: 1rem;
+  text-decoration: none;
+  text-align: center;  
+}
+
+.nav-link.active {
+  color: var(--copper);
+}
+
+.nav-item {
+  display: inline-block;
+}
+
+.navbar {
+  background-color: var(--charcoal);
+  position: sticky;
+  top: 0;
+  transition: top 0.3s;
+  opacity: 100%;
+}
+
+.navbar-nav {
+  margin: -40px 10px;
+  border: 2px solid var(--charcoal);
+  padding: 10px;
+  border-radius: 10px;
+  opacity: 100%;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
