@@ -3,11 +3,11 @@ import { Navbar, Nav, Container } from 'react-bootstrap';
 
 
 function Navigation (props) {
-  const tabs = ['Services', 'About', 'Pricing', 'Contact'];
+  const tabs = [];
   return (
     <Navbar className="navbar sticky-top" id="navbar" bg="" expand="md">
       <Container className="brand-con">
-        <Navbar.Brand className ="brand" href="./index.html">ShredCDR</Navbar.Brand>
+        <Navbar.Brand className ="brand" href="./index.html"></Navbar.Brand>
       </Container>
       <Container>  
         <Nav className="nav-links">
@@ -24,10 +24,7 @@ function Navigation (props) {
             </a>
           </ul>
         ))}
-          {/* <Nav.Link className="nav-link" href="#about">About</Nav.Link>
-          <Nav.Link className="nav-link" href="#experience">Experience</Nav.Link>
-          <Nav.Link className="nav-link" href="#featured">Projects</Nav.Link>
-          <Nav.Link className="nav-link" href="#contact">Contact</Nav.Link> */}
+
           </Nav>
       </Container>
     </Navbar>

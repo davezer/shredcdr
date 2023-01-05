@@ -1,11 +1,11 @@
-import Navigation from './components/Nav/nav.js';
+import Landing from './components/Landing/landing';
 import './App.css';
 
 function App() {
   return (
     <>
       <div>
-        <Navigation></Navigation>
+        <Landing></Landing>
       </div>
       <div>
         {/* <Footer /> */}
