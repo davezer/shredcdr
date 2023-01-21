@@ -1,11 +1,8 @@
 :root {
   font-family: 'Montserrat', sans-serif;
-  --charcoal: #117ac9;
   --white:  #fff;
-  --chestnut: #98473E;
-  --cadetGrey: #9EA3B0;
-  --pacificBlue: #006D77;
-  --copper: #BE7220;
+  --blue: #00347a;
+  --lime: #a3d766;
 
   --timing: 200ms;
   --scale: 1;
@@ -16,8 +13,8 @@
 }
 
 body {
-  background-color: var(--charcoal);
-  color: var(--white);
+  background-color: var(--white);
+  color: var(--blue);
   font-family: var(--font-family);
   margin: 0;
   min-width: fit-content;
@@ -25,8 +22,8 @@ body {
 
 /* Landing Page */
 .landing {
-  background: #117ac9;
-    color: #fff;
+  background: #fff;
+    color: var(--blue);
     display: grid;
     grid-gap: 24px;
     grid-template-columns: repeat(12, 1fr);
@@ -52,7 +49,7 @@ body {
   font-family: 'Roboto Slab', serif;
   font-size: 28px;
   margin-bottom: 16px;
-  color:#fff;
+  color: var(--blue);
   line-height: 1.3;
   padding: 0;
   text-align: left;
@@ -61,7 +58,7 @@ body {
   font-family: 'Playfair Display', serif;
   font-size: 99px;
   margin-bottom: 16px;
-  color: #fff;
+  color: var(--blue);
   line-height: 1.15;
   padding: 0;
   text-align: left;
@@ -71,14 +68,16 @@ body {
 
 /* NAVBAR */
 .brand {
-  color: var(--pacificBlue);
+  color: var(--white);
   font-size: 30px;
-  padding-top: 1px;
+  padding-top: 15px;
+  margin-top: 5px;
+  text-decoration: none;
 
 }
 
 .nav-link {
-  color: white;
+  color: var(--white);
   font-size: 18px;
   padding: 1rem;
   text-decoration: none;
@@ -86,7 +85,7 @@ body {
 }
 
 .nav-link.active {
-  color: var(--copper);
+  color: var(--lime);
 }
 
 .nav-item {
@@ -94,7 +93,7 @@ body {
 }
 
 .navbar {
-  background-color: var(--charcoal);
+  background-color: var(--blue);
   position: sticky;
   top: 0;
   transition: top 0.3s;
@@ -103,7 +102,7 @@ body {
 
 .navbar-nav {
   margin: -40px 10px;
-  border: 2px solid var(--charcoal);
+  border: 2px solid var(--blue);
   padding: 10px;
   border-radius: 10px;
   opacity: 100%;
@@ -111,7 +110,7 @@ body {
 }
 
 
-@media (prefers-reduced-motion: no-preference) {
+/* @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
@@ -139,4 +138,4 @@ body {
   to {
     transform: rotate(360deg);
   }
-}
+} */
